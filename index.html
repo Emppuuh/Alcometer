@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Alcometer</title>
+</head>
+<body>
+    <div>
+        <h1>Alcometer</h1>
+        <div>
+            <label for="weight">Weight</label>
+            <input type="text" id="weight" value="e.g. 89">
+        </div>
+        <div>
+            <label for="time">Time</label>
+            <select id="time">
+                <option value="1">1 hour</option>
+                <option value="2">2 hours</option>
+                <option value="3">3 hours</option>
+            </select>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="bottles">Bottles</label>
+            <select id="bottles">
+                <option value="0">0 bottle</option>
+                <option value="1">1 bottle</option>
+                <option value="2">2 bottles</option>
+                <option value="3">3 bottles</option>
+            </select>
+        </div>
+        <div>
+            <label for="promilles">Promilles</label>
+        <span id="result">0.00</span>
+        </div>
+    </div>
+    <button onclick="calculate()">Calculate</button>
+    <script src="./js/functions.js"></script>
+</body>
+</html>
